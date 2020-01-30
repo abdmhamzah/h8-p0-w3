@@ -1,24 +1,7 @@
 //  NAMA: Hamzah Abdullah Mubarak
 
 function angkaPalindrome(num) {
-    var hasil = num
-
-    if (num < 10){
-        return num + 1
-    }
-    else {
-        var toStr = ''+num
-        console.log(toStr);
-        
-        for (var i = 0; i < toStr.length; i++) {
-            console.log(num[i]);
-        }
-    
-        if (String(hasil) !== String(num)){
-        
-        }
-
-    }
+ 
 }
   
 // TEST CASES
