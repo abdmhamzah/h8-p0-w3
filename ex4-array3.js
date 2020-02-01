@@ -27,13 +27,11 @@ function dataHandling2(data) {
     var sort = tanggal.sort(function(a,b){return(b-a)})
     var limitNama = data[1].slice(0, 15)
     
-    return `
-    [${data}]
-    ${bulan}
-    [${sort}]
-    ${dataTanggal}
-    ${limitNama}
-    `
+    console.log(data)
+    console.log(bulan)
+    console.log(sort)
+    console.log(dataTanggal)
+    console.log(limitNama)
 }
 
-console.log(dataHandling2(["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]));
+dataHandling2(["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]);

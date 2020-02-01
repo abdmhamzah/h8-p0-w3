@@ -11,12 +11,15 @@ function tentukanDeretAritmatika(arr) {
     }
     console.log(dataBeda);
 
-    for (let j = 0; j < dataBeda.length; j++) {
-        if (dataBeda[j] !== dataBeda[1]){
+    for (let j = 0; j < dataBeda.length-1; j++) {
+        if (dataBeda[j] === dataBeda[j+1]){
+            continue
+        }
+        else {
             return false
         }
-        return true
     }
+    return true
 }
 
 // TEST CASES
