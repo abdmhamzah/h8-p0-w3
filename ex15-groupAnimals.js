@@ -1,12 +1,25 @@
 //  NAMA: Hamzah Abdullah Mubarak
 
 function groupAnimals(animals) {
-    var hasil = []
-    var smallGroup = []
 
+    // sort animal sesuai abjad
+    // animals.sort()
+    
+    var hasil = []
     for (var i = 0; i < animals.length; i++) {
-        
+        var cek = false
+        var index
+        for (var j = 0; j < hasil.length; j++) {
+            if(hasil[j][0] === animals[i][0]){
+                hasil[j].push(animals[i])
+                animals[i] = ''
+            }
+        }
+        if (cek === false){
+            hasil.push([animals[i]])
+        }
     }
+    
 
     return hasil
 }

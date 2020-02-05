@@ -2,6 +2,7 @@
 
 function targetTerdekat(arr) {
 
+    // cari indeks posisi o dan x
     var o = []
     var x = []
     for (var i = 0; i < arr.length; i++) {
@@ -17,20 +18,23 @@ function targetTerdekat(arr) {
         return 0
     }
 
+    // hitung jarak
     var jarak = []
     for (var j = 0; j < x.length; j++) {
         jarak[j] = Math.abs(x[j] - o)
     }
     console.log(jarak);
 
-    for (var k = 0; k < jarak.length; k++) {
+    // sorting jarak
+    for (var k = 0; k <= jarak.length-1; k++) {       
         var kecil = 0
-        if (jarak[i] < jarak[i+1]){
-            kecil = jarak[i]
-            jarak[i] = jarak[i+1]
-            jarak[i+1] = kecil
+        if (jarak[k] > jarak[k+1]){
+            kecil = jarak[k]
+            jarak[k] = jarak[k+1]
+            jarak[k+1] = kecil
         }
     }
+    console.log(jarak);
     
     return jarak[0]
 }

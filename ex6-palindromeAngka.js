@@ -1,7 +1,22 @@
 //  NAMA: Hamzah Abdullah Mubarak
 
 function angkaPalindrome(num) {
- 
+    var kata
+    var tmp
+    num++
+    while (true) {
+        kata = String(num)
+        temp = ''
+        for (var i = kata.length; i >= 0; i--) {
+            temp += kata[i]
+        }
+        if (temp === kata){
+            return num
+        }
+        else {
+            num ++
+        }
+    }
 }
   
 // TEST CASES

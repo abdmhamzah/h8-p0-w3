@@ -1,11 +1,11 @@
 //  NAMA: Hamzah Abdullah Mubarak
 
 function mengelompokkanAngka(arr) {
-    var hasil = []
+
+    // pisahkan genap, ganjil, dan kelipatan tiga dalam satu variabel
     var genap = []
     var ganjil = []
     var tiga = []
-
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] % 3 === 0){
             tiga.push(arr[i])
@@ -19,6 +19,8 @@ function mengelompokkanAngka(arr) {
         }
     }
 
+    // push masing2 variabel dalam hasil sesuai urutan
+    var hasil = []
     hasil.push(genap)
     hasil.push(ganjil)
     hasil.push(tiga)
